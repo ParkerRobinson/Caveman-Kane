@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF9E146E1933D57300D9CADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9E146D1933D57300D9CADE /* Foundation.framework */; };
+		DF9E14701933D57300D9CADE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9E146F1933D57300D9CADE /* CoreGraphics.framework */; };
+		DF9E14721933D57300D9CADE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9E14711933D57300D9CADE /* UIKit.framework */; };
+		DF9E14741933D57300D9CADE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9E14731933D57300D9CADE /* SpriteKit.framework */; };
+		DF9E147A1933D57300D9CADE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF9E14781933D57300D9CADE /* InfoPlist.strings */; };
+		DF9E147C1933D57300D9CADE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9E147B1933D57300D9CADE /* main.m */; };
+		DF9E14801933D57300D9CADE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9E147F1933D57300D9CADE /* AppDelegate.m */; };
+		DF9E14831933D57300D9CADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF9E14811933D57300D9CADE /* Main.storyboard */; };
+		DF9E14861933D57300D9CADE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9E14851933D57300D9CADE /* ViewController.m */; };
+		DF9E14891933D57300D9CADE /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9E14881933D57300D9CADE /* MyScene.m */; };
+		DF9E148B1933D57300D9CADE /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DF9E148A1933D57300D9CADE /* Spaceship.png */; };
+		DF9E148D1933D57300D9CADE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9E148C1933D57300D9CADE /* Images.xcassets */; };
+		DF9E14941933D57300D9CADE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9E14931933D57300D9CADE /* XCTest.framework */; };
+		DF9E14951933D57300D9CADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9E146D1933D57300D9CADE /* Foundation.framework */; };
+		DF9E14961933D57300D9CADE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9E14711933D57300D9CADE /* UIKit.framework */; };
+		DF9E149E1933D57300D9CADE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF9E149C1933D57300D9CADE /* InfoPlist.strings */; };
+		DF9E14A01933D57300D9CADE /* Caveman_KaneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9E149F1933D57300D9CADE /* Caveman_KaneTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF9E14971933D57300D9CADE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF9E14621933D57300D9CADE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF9E14691933D57300D9CADE;
+			remoteInfo = "Caveman Kane";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF9E146A1933D57300D9CADE /* Caveman Kane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caveman Kane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9E146D1933D57300D9CADE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF9E146F1933D57300D9CADE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF9E14711933D57300D9CADE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF9E14731933D57300D9CADE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		DF9E14771933D57300D9CADE /* Caveman Kane-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Caveman Kane-Info.plist"; sourceTree = "<group>"; };
+		DF9E14791933D57300D9CADE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF9E147B1933D57300D9CADE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF9E147D1933D57300D9CADE /* Caveman Kane-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Caveman Kane-Prefix.pch"; sourceTree = "<group>"; };
+		DF9E147E1933D57300D9CADE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF9E147F1933D57300D9CADE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF9E14821933D57300D9CADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF9E14841933D57300D9CADE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DF9E14851933D57300D9CADE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DF9E14871933D57300D9CADE /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		DF9E14881933D57300D9CADE /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		DF9E148A1933D57300D9CADE /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		DF9E148C1933D57300D9CADE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF9E14921933D57300D9CADE /* Caveman KaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Caveman KaneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9E14931933D57300D9CADE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DF9E149B1933D57300D9CADE /* Caveman KaneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Caveman KaneTests-Info.plist"; sourceTree = "<group>"; };
+		DF9E149D1933D57300D9CADE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF9E149F1933D57300D9CADE /* Caveman_KaneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caveman_KaneTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF9E14671933D57300D9CADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9E14701933D57300D9CADE /* CoreGraphics.framework in Frameworks */,
+				DF9E14721933D57300D9CADE /* UIKit.framework in Frameworks */,
+				DF9E14741933D57300D9CADE /* SpriteKit.framework in Frameworks */,
+				DF9E146E1933D57300D9CADE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF9E148F1933D57300D9CADE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9E14941933D57300D9CADE /* XCTest.framework in Frameworks */,
+				DF9E14961933D57300D9CADE /* UIKit.framework in Frameworks */,
+				DF9E14951933D57300D9CADE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF9E14611933D57300D9CADE = {
+			isa = PBXGroup;
+			children = (
+				DF9E14751933D57300D9CADE /* Caveman Kane */,
+				DF9E14991933D57300D9CADE /* Caveman KaneTests */,
+				DF9E146C1933D57300D9CADE /* Frameworks */,
+				DF9E146B1933D57300D9CADE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF9E146B1933D57300D9CADE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF9E146A1933D57300D9CADE /* Caveman Kane.app */,
+				DF9E14921933D57300D9CADE /* Caveman KaneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF9E146C1933D57300D9CADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF9E146D1933D57300D9CADE /* Foundation.framework */,
+				DF9E146F1933D57300D9CADE /* CoreGraphics.framework */,
+				DF9E14711933D57300D9CADE /* UIKit.framework */,
+				DF9E14731933D57300D9CADE /* SpriteKit.framework */,
+				DF9E14931933D57300D9CADE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF9E14751933D57300D9CADE /* Caveman Kane */ = {
+			isa = PBXGroup;
+			children = (
+				DF9E147E1933D57300D9CADE /* AppDelegate.h */,
+				DF9E147F1933D57300D9CADE /* AppDelegate.m */,
+				DF9E14811933D57300D9CADE /* Main.storyboard */,
+				DF9E14841933D57300D9CADE /* ViewController.h */,
+				DF9E14851933D57300D9CADE /* ViewController.m */,
+				DF9E14871933D57300D9CADE /* MyScene.h */,
+				DF9E14881933D57300D9CADE /* MyScene.m */,
+				DF9E148A1933D57300D9CADE /* Spaceship.png */,
+				DF9E148C1933D57300D9CADE /* Images.xcassets */,
+				DF9E14761933D57300D9CADE /* Supporting Files */,
+			);
+			path = "Caveman Kane";
+			sourceTree = "<group>";
+		};
+		DF9E14761933D57300D9CADE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF9E14771933D57300D9CADE /* Caveman Kane-Info.plist */,
+				DF9E14781933D57300D9CADE /* InfoPlist.strings */,
+				DF9E147B1933D57300D9CADE /* main.m */,
+				DF9E147D1933D57300D9CADE /* Caveman Kane-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF9E14991933D57300D9CADE /* Caveman KaneTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF9E149F1933D57300D9CADE /* Caveman_KaneTests.m */,
+				DF9E149A1933D57300D9CADE /* Supporting Files */,
+			);
+			path = "Caveman KaneTests";
+			sourceTree = "<group>";
+		};
+		DF9E149A1933D57300D9CADE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF9E149B1933D57300D9CADE /* Caveman KaneTests-Info.plist */,
+				DF9E149C1933D57300D9CADE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF9E14691933D57300D9CADE /* Caveman Kane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF9E14A31933D57300D9CADE /* Build configuration list for PBXNativeTarget "Caveman Kane" */;
+			buildPhases = (
+				DF9E14661933D57300D9CADE /* Sources */,
+				DF9E14671933D57300D9CADE /* Frameworks */,
+				DF9E14681933D57300D9CADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Caveman Kane";
+			productName = "Caveman Kane";
+			productReference = DF9E146A1933D57300D9CADE /* Caveman Kane.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF9E14911933D57300D9CADE /* Caveman KaneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF9E14A61933D57300D9CADE /* Build configuration list for PBXNativeTarget "Caveman KaneTests" */;
+			buildPhases = (
+				DF9E148E1933D57300D9CADE /* Sources */,
+				DF9E148F1933D57300D9CADE /* Frameworks */,
+				DF9E14901933D57300D9CADE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF9E14981933D57300D9CADE /* PBXTargetDependency */,
+			);
+			name = "Caveman KaneTests";
+			productName = "Caveman KaneTests";
+			productReference = DF9E14921933D57300D9CADE /* Caveman KaneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF9E14621933D57300D9CADE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Rekap Game Studios";
+				TargetAttributes = {
+					DF9E14911933D57300D9CADE = {
+						TestTargetID = DF9E14691933D57300D9CADE;
+					};
+				};
+			};
+			buildConfigurationList = DF9E14651933D57300D9CADE /* Build configuration list for PBXProject "Caveman Kane" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF9E14611933D57300D9CADE;
+			productRefGroup = DF9E146B1933D57300D9CADE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF9E14691933D57300D9CADE /* Caveman Kane */,
+				DF9E14911933D57300D9CADE /* Caveman KaneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF9E14681933D57300D9CADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9E147A1933D57300D9CADE /* InfoPlist.strings in Resources */,
+				DF9E148D1933D57300D9CADE /* Images.xcassets in Resources */,
+				DF9E148B1933D57300D9CADE /* Spaceship.png in Resources */,
+				DF9E14831933D57300D9CADE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF9E14901933D57300D9CADE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9E149E1933D57300D9CADE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF9E14661933D57300D9CADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9E14891933D57300D9CADE /* MyScene.m in Sources */,
+				DF9E14861933D57300D9CADE /* ViewController.m in Sources */,
+				DF9E14801933D57300D9CADE /* AppDelegate.m in Sources */,
+				DF9E147C1933D57300D9CADE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF9E148E1933D57300D9CADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9E14A01933D57300D9CADE /* Caveman_KaneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF9E14981933D57300D9CADE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF9E14691933D57300D9CADE /* Caveman Kane */;
+			targetProxy = DF9E14971933D57300D9CADE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF9E14781933D57300D9CADE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF9E14791933D57300D9CADE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DF9E14811933D57300D9CADE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF9E14821933D57300D9CADE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF9E149C1933D57300D9CADE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF9E149D1933D57300D9CADE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF9E14A11933D57300D9CADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF9E14A21933D57300D9CADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF9E14A41933D57300D9CADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Caveman Kane/Caveman Kane-Prefix.pch";
+				INFOPLIST_FILE = "Caveman Kane/Caveman Kane-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF9E14A51933D57300D9CADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Caveman Kane/Caveman Kane-Prefix.pch";
+				INFOPLIST_FILE = "Caveman Kane/Caveman Kane-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DF9E14A71933D57300D9CADE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Caveman Kane.app/Caveman Kane";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Caveman Kane/Caveman Kane-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Caveman KaneTests/Caveman KaneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DF9E14A81933D57300D9CADE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Caveman Kane.app/Caveman Kane";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Caveman Kane/Caveman Kane-Prefix.pch";
+				INFOPLIST_FILE = "Caveman KaneTests/Caveman KaneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF9E14651933D57300D9CADE /* Build configuration list for PBXProject "Caveman Kane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF9E14A11933D57300D9CADE /* Debug */,
+				DF9E14A21933D57300D9CADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF9E14A31933D57300D9CADE /* Build configuration list for PBXNativeTarget "Caveman Kane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF9E14A41933D57300D9CADE /* Debug */,
+				DF9E14A51933D57300D9CADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF9E14A61933D57300D9CADE /* Build configuration list for PBXNativeTarget "Caveman KaneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF9E14A71933D57300D9CADE /* Debug */,
+				DF9E14A81933D57300D9CADE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF9E14621933D57300D9CADE /* Project object */;
+}
