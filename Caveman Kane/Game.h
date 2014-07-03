@@ -1,5 +1,5 @@
 //
-//  MyScene.h
+//  Game.h
 //  Caveman Kane
 //
 
@@ -8,6 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface MyScene : SKScene
+@interface Game : SKScene
+
 
 @end

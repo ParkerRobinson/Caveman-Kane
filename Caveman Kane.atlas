@@ -1,0 +1,96 @@
+
+Caveman Kane.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Chest
+  rotate: false
+  xy: 290, 17
+  size: 46, 45
+  orig: 46, 45
+  offset: 0, 0
+  index: -1
+Head
+  rotate: true
+  xy: 104, 2
+  size: 60, 73
+  orig: 60, 73
+  offset: 0, 0
+  index: -1
+LeftArm
+  rotate: false
+  xy: 409, 34
+  size: 26, 28
+  orig: 26, 28
+  offset: 0, 0
+  index: -1
+LeftFist
+  rotate: false
+  xy: 437, 39
+  size: 28, 23
+  orig: 28, 23
+  offset: 0, 0
+  index: -1
+LeftLeg
+  rotate: true
+  xy: 237, 27
+  size: 35, 51
+  orig: 35, 51
+  offset: 0, 0
+  index: -1
+LeftShoulder
+  rotate: true
+  xy: 403, 2
+  size: 30, 19
+  orig: 30, 19
+  offset: 0, 0
+  index: -1
+Neck
+  rotate: true
+  xy: 179, 12
+  size: 11, 26
+  orig: 11, 26
+  offset: 0, 0
+  index: -1
+RightArm
+  rotate: true
+  xy: 237, 2
+  size: 23, 30
+  orig: 23, 30
+  offset: 0, 0
+  index: -1
+RightFist
+  rotate: false
+  xy: 378, 34
+  size: 29, 28
+  orig: 29, 28
+  offset: 0, 0
+  index: -1
+RightLeg
+  rotate: false
+  xy: 338, 20
+  size: 38, 42
+  orig: 38, 42
+  offset: 0, 0
+  index: -1
+RightShoulder
+  rotate: false
+  xy: 378, 2
+  size: 23, 30
+  orig: 23, 30
+  offset: 0, 0
+  index: -1
+Skirt
+  rotate: false
+  xy: 179, 25
+  size: 56, 37
+  orig: 56, 37
+  offset: 0, 0
+  index: -1
+Weapon
+  rotate: false
+  xy: 2, 5
+  size: 100, 57
+  orig: 100, 57
+  offset: 0, 0
+  index: -1
