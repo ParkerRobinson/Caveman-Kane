@@ -26,7 +26,6 @@ static void _spine_adapt_disposeTexture( void * rendobj );
 
 @implementation DZSpineSceneBuilder
 @synthesize maps = _maps;
-@synthesize currentAnimation;
 
 
 - (SKNode *) nodeWithSkeleton:(SpineSkeleton *) skeleton animationName:(NSString *) animationName loop:(BOOL)loop
@@ -336,7 +335,6 @@ static void _spine_adapt_disposeTexture( void * rendobj );
         NSLog(@"No such animation: %@", animation.name);
         return;
     }
-    currentAnimation = animationName;
     
     DZSpineSpriteKitAnimation *skAnimation = [[DZSpineSpriteKitAnimation alloc] initWithSkeleton:skeleton maps:self.maps];
     

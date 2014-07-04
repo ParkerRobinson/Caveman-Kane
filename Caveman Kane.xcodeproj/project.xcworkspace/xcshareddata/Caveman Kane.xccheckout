@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D58CA85C-A7EE-4768-8D0F-6BC37F3DFAB2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Caveman Kane</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9A78DC9C-00F6-46E0-A8D9-1EACD1D45079</key>
+		<string>https://github.com/ParkerRobinson/Caveman-Kane.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Caveman Kane.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9A78DC9C-00F6-46E0-A8D9-1EACD1D45079</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ParkerRobinson/Caveman-Kane.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9A78DC9C-00F6-46E0-A8D9-1EACD1D45079</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9A78DC9C-00F6-46E0-A8D9-1EACD1D45079</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Caveman Kane</string>
+		</dict>
+	</array>
+</dict>
+</plist>

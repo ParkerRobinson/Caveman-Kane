@@ -11,6 +11,7 @@
 
 #import "Game.h"
 #import "DZSpineSceneBuilder.h"
+#import "VectorNode.m"
 
 static int const TICKS_PER_SECOND = 25;
 static int SKIP_TICKS = 1000 / TICKS_PER_SECOND;
@@ -19,33 +20,24 @@ static int const MAX_FRAMESKIP = 10;
 @implementation Game {
     DZSpineSceneBuilder *_builder;
     
-    SpineSkeleton *_playerSkeleton;
-    SKNode *_player;
-    SKNode *_spineNode;
-    double playerYBounds;
-    double playerVelX;
+    VectorNode *_player;
     
     SKNode *_backgroundNode;
     SKNode *_foregroundNode;
-    SKNode *_hudNode;
-    
 }
 
 -(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size])
     {
+        _builder = [DZSpineSceneBuilder builder];
         self.backgroundColor = [SKColor colorWithRed:0 green:0 blue:0 alpha:1.0];
         self.physicsWorld.gravity = CGVectorMake(0.0f, 0.0f);
-        _builder = [DZSpineSceneBuilder builder];
         
         _backgroundNode = [self createBackgroundNode];
         [self addChild:_backgroundNode];
         
-        _foregroundNode = [SKNode node];
+        _foregroundNode = [self createForgroundNode];
         [self addChild:_foregroundNode];
-        playerYBounds = self.size.height/10;
-        _player = [self createPlayer];
-        [_foregroundNode addChild:_player];
 
     }
     return self;
@@ -53,21 +45,28 @@ static int const MAX_FRAMESKIP = 10;
 
 - (SKNode *) createBackgroundNode
 {
-    SKNode *backgroundNode = [SKNode node];
+    SKNode *node = [SKNode node];
     SKSpriteNode *backgroundImage = [SKSpriteNode spriteNodeWithImageNamed:@"BackgroundTall"];
     backgroundImage.anchorPoint = CGPointMake(0.0f, 0.0f);
     backgroundImage.position = CGPointMake(0, 0);
-    [backgroundNode addChild:backgroundImage];
-    return backgroundNode;
+    [node addChild:backgroundImage];
+    return node;
 }
 
-- (SKNode *) createPlayer
+- (SKNode *) createForgroundNode
 {
-    _playerSkeleton = [DZSpineSceneBuilder loadSkeletonName:@"Caveman Kane" scale:0.5];
-    _player = [SKNode node];
-    _player.position = CGPointMake(self.size.width/2, playerYBounds);
-    _spineNode = [_builder nodeWithSkeleton:_playerSkeleton animationName:@"Standing" loop:YES];
-    [_player addChild:_spineNode];
+    SKNode *node = [SKNode node];
+    [self createPlayer];
+    [node addChild:_player];
+    return node;
+}
+
+- (void) createPlayer
+{
+    _player = [[VectorNode alloc] initWithSkeleton:@"Caveman Kane" withScale:0.5 withBuilder:_builder withAnimation:@"Standing"];
+    
+    [_player setYBounds:self.size.height/10];
+    _player.position = CGPointMake(self.size.width/2, _player.getYBounds);
     
     _player.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:3];
     _player.physicsBody.dynamic = YES;
@@ -77,8 +76,6 @@ static int const MAX_FRAMESKIP = 10;
     _player.physicsBody.angularDamping = 0.1f;
     _player.physicsBody.linearDamping = 0.1f;
     //_player.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
-    
-    return _player;
 }
 
 - (void)didMoveToView:(SKView *)view {
@@ -92,20 +89,20 @@ static int const MAX_FRAMESKIP = 10;
     CGPoint LongTapPoint = [gestureRecognizer locationInView:self.view];
     if (gestureRecognizer.state == UIGestureRecognizerStateEnded)
     {
-        playerVelX = 0;
+        [_player setVelX:0];
     }
     else if (LongTapPoint.x > _player.position.x)
     {
-        playerVelX = 56/TICKS_PER_SECOND;
+        [_player setVelX:56/TICKS_PER_SECOND];
 
     }
     else if (LongTapPoint.x < _player.position.x)
     {
-        playerVelX = -56/TICKS_PER_SECOND;
+        [_player setVelX:-56/TICKS_PER_SECOND];
     }
     else
     {
-        playerVelX = 0;
+        [_player setVelX:0];
     }
 
 }
@@ -153,29 +150,29 @@ static int const MAX_FRAMESKIP = 10;
 
 -(void)updatePlayer
 {
-    _player.position = CGPointMake(_player.position.x + playerVelX, playerYBounds);
-    if (playerVelX > 0) {
+    _player.position = CGPointMake(_player.position.x + _player.getVelX, _player.getYBounds);
+    if (_player.getVelX > 0) {
         //set to false
-        if([_builder.currentAnimation isEqualToString:@"Walking"] == false)
+        if([_player.getCurrentAnimation isEqualToString:@"Walking"] == false) //Move this check to inside the vectorObj?
         {
-           [_builder runAnimationName:@"Walking" skeleton:_playerSkeleton loop:YES];
+            [_player runAnimationName:@"Walking" withBuilder:_builder];
         }
         
     
     }
-    else if (playerVelX < 0)
+    else if (_player.getVelX < 0)
     {
         //set flip true
-        if([_builder.currentAnimation isEqualToString:@"Walking"] == false)
+        if([_player.getCurrentAnimation isEqualToString:@"Walking"] == false)
         {
-            [_builder runAnimationName:@"Walking" skeleton:_playerSkeleton loop:YES];
+            [_player runAnimationName:@"Walking" withBuilder:_builder];
         }
     }
     else
     {
-        if([_builder.currentAnimation isEqualToString:@"Standing"] == false)
+        if([_player.getCurrentAnimation isEqualToString:@"Standing"] == false)
         {
-            [_builder runAnimationName:@"Standing" skeleton:_playerSkeleton loop:YES];
+            [_player runAnimationName:@"Walking" withBuilder:_builder];
         }
     }
         

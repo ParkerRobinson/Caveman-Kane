@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DF067B611937D5DA00FA888E /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = DF067B601937D5DA00FA888E /* Game.m */; };
 		DF067B621937D5DA00FA888E /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = DF067B601937D5DA00FA888E /* Game.m */; };
+		DF54EFB519663E2D0089CB26 /* VectorNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DF54EFB419663E2D0089CB26 /* VectorNode.m */; };
 		DF9E146E1933D57300D9CADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9E146D1933D57300D9CADE /* Foundation.framework */; };
 		DF9E14701933D57300D9CADE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9E146F1933D57300D9CADE /* CoreGraphics.framework */; };
 		DF9E14721933D57300D9CADE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9E14711933D57300D9CADE /* UIKit.framework */; };
@@ -122,6 +123,8 @@
 /* Begin PBXFileReference section */
 		DF067B5F1937D5DA00FA888E /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		DF067B601937D5DA00FA888E /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		DF54EFB319663E2D0089CB26 /* VectorNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VectorNode.h; sourceTree = "<group>"; };
+		DF54EFB419663E2D0089CB26 /* VectorNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VectorNode.m; sourceTree = "<group>"; };
 		DF9E146A1933D57300D9CADE /* Caveman Kane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caveman Kane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9E146D1933D57300D9CADE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF9E146F1933D57300D9CADE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -301,6 +304,8 @@
 				DF9E14851933D57300D9CADE /* ViewController.m */,
 				DF067B5F1937D5DA00FA888E /* Game.h */,
 				DF067B601937D5DA00FA888E /* Game.m */,
+				DF54EFB319663E2D0089CB26 /* VectorNode.h */,
+				DF54EFB419663E2D0089CB26 /* VectorNode.m */,
 				DF9E148C1933D57300D9CADE /* Images.xcassets */,
 				DF9E14761933D57300D9CADE /* Supporting Files */,
 			);
@@ -513,7 +518,7 @@
 		DF9E14621933D57300D9CADE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Rekap Game Studios";
 				TargetAttributes = {
 					DF9E14911933D57300D9CADE = {
@@ -603,6 +608,7 @@
 				DF9E155C1933D80300D9CADE /* SpineAnimation.m in Sources */,
 				DF9E14861933D57300D9CADE /* ViewController.m in Sources */,
 				DF9E15DB1933D85500D9CADE /* AnimationState.c in Sources */,
+				DF54EFB519663E2D0089CB26 /* VectorNode.m in Sources */,
 				DF9E155A1933D80300D9CADE /* spine_adapt.m in Sources */,
 				DF9E15E71933D85500D9CADE /* Bone.c in Sources */,
 				DF9E15761933D80300D9CADE /* DZSpineSpriteKitMaps.m in Sources */,
@@ -707,7 +713,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -746,7 +751,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -818,7 +822,6 @@
 		DF9E14A71933D57300D9CADE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Caveman Kane.app/Caveman Kane";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -841,7 +844,6 @@
 		DF9E14A81933D57300D9CADE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Caveman Kane.app/Caveman Kane";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

@@ -12,7 +12,6 @@
 
 @interface DZSpineSceneBuilder : NSObject
 @property (nonatomic) BOOL debug;
-@property (nonatomic, readonly) NSString *currentAnimation;
 
 - (SKNode *) nodeWithSkeleton:(SpineSkeleton *) skeleton animationName:(NSString *) animationName loop:(BOOL)loop;
 - (SKNode *) nodeWithSkeleton:(SpineSkeleton *) skeleton animationNames:(NSArray *) animations loop:(BOOL)loop;
