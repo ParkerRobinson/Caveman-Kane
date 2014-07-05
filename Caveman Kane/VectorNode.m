@@ -43,11 +43,11 @@
 {
     return health;
 }
-- (void) setHealth:(int)_health
+- (void) setHealth:(int)_health;
 {
     self.health = _health;
 }
-- (void) incHealth:(int)_health
+- (void) incHealth:(int)_health;
 {
     self.health =+ _health;
 }
@@ -55,11 +55,11 @@
 {
     return lives;
 }
-- (void) setLives:(int)_lives
+- (void) setLives:(int)_lives;
 {
     self.lives = _lives;
 }
-- (void) incLives:(int)_lives
+- (void) incLives:(int)_lives;
 {
     self.health =+ _lives;
 }
@@ -67,11 +67,11 @@
 {
     return velX;
 }
-- (void) setVelX:(int)_velX
+- (void) setVelX:(int)_velX;
 {
     self.velX = _velX;
 }
-- (void) incVelX:(int)_velX
+- (void) incVelX:(int)_velX;
 {
     self.velX =+ _velX;
 }
@@ -79,11 +79,11 @@
 {
     return velY;
 }
-- (void) setVelY:(int)_velY
+- (void) setVelY:(int)_velY;
 {
     self.velY = _velY;
 }
-- (void) incVelY:(int)_velY
+- (void) incVelY:(int)_velY;
 {
     self.velY =+ _velY;
 }
@@ -91,7 +91,7 @@
 {
     return xBounds;
 }
-- (void) setXBounds:(int)_xBounds
+- (void) setXBounds:(int)_xBounds;
 {
     self.xBounds = _xBounds;
 }
@@ -99,7 +99,7 @@
 {
     return yBounds;
 }
-- (void) setYBounds:(int)_yBounds
+- (void) setYBounds:(int)_yBounds;
 {
     self.yBounds = _yBounds;
 }

@@ -11,7 +11,7 @@
 
 #import "Game.h"
 #import "DZSpineSceneBuilder.h"
-#import "VectorNode.m"
+#import "VectorNode.h"
 
 static int const TICKS_PER_SECOND = 25;
 static int SKIP_TICKS = 1000 / TICKS_PER_SECOND;
