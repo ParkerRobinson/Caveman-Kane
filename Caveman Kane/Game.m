@@ -38,7 +38,6 @@ static int const MAX_FRAMESKIP = 10;
         
         _foregroundNode = [self createForgroundNode];
         [self addChild:_foregroundNode];
-
     }
     return self;
 }
@@ -65,8 +64,8 @@ static int const MAX_FRAMESKIP = 10;
 {
     _player = [[VectorNode alloc] initWithSkeleton:@"Caveman Kane" withScale:0.5 withBuilder:_builder withAnimation:@"Standing"];
     
-    [_player setYBounds:self.size.height/10];
-    _player.position = CGPointMake(self.size.width/2, _player.getYBounds);
+    [_player setYBounds:(int)self.size.height/10];
+    _player.position = CGPointMake(self.size.width/2, 0); //replace this Y value with YBounds
     
     _player.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:3];
     _player.physicsBody.dynamic = YES;
@@ -140,7 +139,6 @@ static int const MAX_FRAMESKIP = 10;
     [self updatePlayer];
     [self updateMonsters];
     [self updateBackground];
-    
 }
 
 -(void)checkCollisions
@@ -150,7 +148,9 @@ static int const MAX_FRAMESKIP = 10;
 
 -(void)updatePlayer
 {
-    _player.position = CGPointMake(_player.position.x + _player.getVelX, _player.getYBounds);
+    _player.position = CGPointMake(_player.position.x + _player.getVelX, _player.getYBounds); //fix Y value
+    NSLog(@"XValue = %f", _player.position.x);
+    NSLog(@"YValue = %f", _player.position.y);
     if (_player.getVelX > 0) {
         //set to false
         if([_player.getCurrentAnimation isEqualToString:@"Walking"] == false) //Move this check to inside the vectorObj?

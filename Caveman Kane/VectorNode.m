@@ -45,11 +45,11 @@
 }
 - (void) setHealth:(int)_health;
 {
-    self.health = _health;
+    health = _health;
 }
 - (void) incHealth:(int)_health;
 {
-    self.health =+ _health;
+    health += _health;
 }
 - (int) getLives;
 {
@@ -57,11 +57,11 @@
 }
 - (void) setLives:(int)_lives;
 {
-    self.lives = _lives;
+    lives = _lives;
 }
 - (void) incLives:(int)_lives;
 {
-    self.health =+ _lives;
+    lives += _lives;
 }
 - (int) getVelX;
 {
@@ -69,11 +69,11 @@
 }
 - (void) setVelX:(int)_velX;
 {
-    self.velX = _velX;
+    velX = _velX;
 }
 - (void) incVelX:(int)_velX;
 {
-    self.velX =+ _velX;
+    velX += _velX;
 }
 - (int) getVelY;
 {
@@ -81,11 +81,11 @@
 }
 - (void) setVelY:(int)_velY;
 {
-    self.velY = _velY;
+    velY = _velY;
 }
 - (void) incVelY:(int)_velY;
 {
-    self.velY =+ _velY;
+    velY += _velY;
 }
 - (int) getXBounds;
 {
@@ -93,7 +93,7 @@
 }
 - (void) setXBounds:(int)_xBounds;
 {
-    self.xBounds = _xBounds;
+    xBounds = _xBounds;
 }
 - (int) getYBounds;
 {
@@ -101,7 +101,7 @@
 }
 - (void) setYBounds:(int)_yBounds;
 {
-    self.yBounds = _yBounds;
+    yBounds = _yBounds;
 }
 - (NSString *) getCurrentAnimation;
 {
