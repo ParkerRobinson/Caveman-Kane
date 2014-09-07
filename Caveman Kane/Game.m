@@ -62,9 +62,9 @@ static int const MAX_FRAMESKIP = 10;
 
 - (void) createPlayer
 {
-    _player = [[VectorNode alloc] initWithSkeleton:@"Caveman Kane" withScale:0.5 withBuilder:_builder withAnimation:@"Standing"];
+    _player = [[VectorNode alloc] initWithSkeleton:@"Caveman Kane" withScale:1 withBuilder:_builder withAnimation:@"Standing"];
     
-    [_player setYBounds:(int)self.size.height/10];
+    [_player setYBounds:(int)self.size.height/7];
     _player.position = CGPointMake(self.size.width/2, 0); //replace this Y value with YBounds
     
     _player.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:3];
@@ -172,7 +172,7 @@ static int const MAX_FRAMESKIP = 10;
     {
         if([_player.getCurrentAnimation isEqualToString:@"Standing"] == false)
         {
-            [_player runAnimationName:@"Walking" withBuilder:_builder];
+            [_player runAnimationName:@"Standing" withBuilder:_builder];
         }
     }
         
